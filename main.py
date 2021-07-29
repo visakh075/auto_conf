@@ -33,5 +33,6 @@ s=extractor("sample.xml")
 s.extract_tags()
 #s.pairing(-1,len(s.taglist),"none")
 print(s.stag[10].name)
+
 #s.out(0)
 
