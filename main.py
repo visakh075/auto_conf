@@ -1,38 +1,40 @@
-import os
-	
-''' Search through tags 
-	in the list select one and go through the next ones until you find
-	a closing tag 
-	
-	if you find the closing tag selelect the next tag from
-	
-	
-	alg
-	start to end
-	
-	loop1:	for i from start in end+1
-		loop2:	for j from i to end +1
-				if(tag list i==taglist j)
-				{
-				found the closing tag
-					recurrent[i+1,j-1] including 
-				break from loop2
-				
-				}
-		i=j;
-		from the next line
-	
-	'''
-	
-from extractor_mod import extractor,tag
+from extractor_mod import extractor
+from auto_conf import report_genrator
+import time
+checklist=[
+    ['MyECU.ecuc.arxml.txt',[[0,'VARIANT-PRE-COMPILE'],[1,'SHORT-NAME']]],
+    ['sample.xml',[[0,'manoj'],[1,'description']]]
+    ]
 
-#m=tag("?xml version=\"1.0\" encoding=\"UTF-8\" ?")
-#print(m.atrributes)
+str_search=['tags','sections']
 
-s=extractor("sample.xml")
-s.extract_tags()
-#s.pairing(-1,len(s.taglist),"none")
-print(s.stag[10].name)
+results=[]
+for checklist_item in checklist:
+    result=[]
+    source_name,search_items=checklist_item
+    print("starting extraction of "+source_name)
+    s_time=time.time()
+    s_extractor=extractor(source_name)
 
-#s.out(0)
+    print("finished extraction of "+source_name+" in "+str(time.time()-s_time)+"s")
+    
+    sc=0
+    for search_item in search_items:
+        search_type,search_string=search_item
+        print(sc)
+        print("search "+search_string+" in "+str_search[search_type])
+        result.append([search_string,search_type,s_extractor.search_in(search_type, search_string)])
+        print("search of "+search_string+" completed ")
+        sc+=1
+    results.append([source_name,result])
+report_genrator(results)
+#s=extractor("MyECU.ecuc.arxml.txt")
+#print("extraction started")
+#s.extract_tags()
+#print("end of extraction")
+#s.out_stag()
+#tags=s.stag
+#s.pairing(0,len(s.stag)-1,s.root)
+
+
 
