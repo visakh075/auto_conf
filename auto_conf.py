@@ -34,9 +34,18 @@ item:
 
 
 """
+styling='''<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>'''
 def report_genrator(result_list):
     rfile=open("report.html","w",encoding='utf-8')
-    rfile.write('<html>')
+    rfile.write('<html><head>')
+    rfile.write(styling)
+    rfile.write('</head>')
+    
+    
     for result_item in result_list:
         source_name,search_items=result_item
         
@@ -65,14 +74,14 @@ def report_genrator(result_list):
                 if(search_type==0):
                     #find is a tag
                     s_result_info+='<div class="finding">'
-                    s_result_info+='<div>'+find.name+'</div>'
-                    s_result_info+='<div>location :('+str(find.l)+','+str(find.l)+')</div>'
+                    #s_result_info+='<div>'+find.name+'</div>'
+                    s_result_info+='<div class="finding_location">location :('+str(find.l)+','+str(find.l)+')</div>'
                     s_result_info+='</div>'
                     
                 elif(search_type==1):
                     s_result_info+='<div class="finding">'
-                    s_result_info+='<div class="finding_name">'+find[0].name+'</div>'
-                    s_result_info+='<div>location :('+str(find[0].l)+','+str(find[0].l)+')</div>'
+                    #s_result_info+='<div class="finding_name">'+find[0].name+'</div>'
+                    s_result_info+='<div class="finding_location">location :('+str(find[0].l)+','+str(find[0].l)+')</div>'
                     s_result_info+='</div>'
                     
             s_result_info+='</div></div>'
@@ -85,9 +94,3 @@ def report_genrator(result_list):
     rfile.flush()
     rfile.close()
     
-    
-        
-        
-        
-        
-        

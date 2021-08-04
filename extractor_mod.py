@@ -220,4 +220,3 @@ class extractor:
         elif(target=="SECTION" or target==1):
             return(self.search_section(content,field))
         
-        

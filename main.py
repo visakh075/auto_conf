@@ -1,11 +1,15 @@
-from extractor_mod import extractor
+from extractor_mod import extractor,tag
 from auto_conf import report_genrator
 import time
+
 checklist=[
     ['MyECU.ecuc.arxml.txt',[[0,'VARIANT-PRE-COMPILE'],[1,'SHORT-NAME']]],
     ['sample.xml',[[0,'manoj'],[1,'description']]]
     ]
 
+'''checklist=[
+    ['sample.xml',[[0,'manoj'],[1,'description']]]
+    ]'''
 str_search=['tags','sections']
 
 results=[]
@@ -35,6 +39,50 @@ report_genrator(results)
 #s.out_stag()
 #tags=s.stag
 #s.pairing(0,len(s.stag)-1,s.root)
+'''
+Structure of results
+
+results=result_items
+result_items=[result_item]
+result_item=[source__name,search_items]
+search_items=[search_item]
+search_item=[search_string,search_type,findings]
+findings=[find]
+find= tag or [tag]
+
+'''
 
 
-
+root=tag("root",0,0,0)
+hirarchy=[]
+def tree(results):
+    for result_item in results:
+        source_name,search_items=result_item
+        level=[]
+        for search_item in search_items:
+            search_string,search_type,findings=search_item
+            
+            for find in findings:
+                chain=[]
+                if search_type==0:
+                    #find
+                    pass
+                else:
+                    find=find[0]
+                while(find.parent!=0):
+                    chain=[find]+chain
+                    find=find.parent
+                level.append(chain)
+        print("\n")
+        hirarchy.append(level)
+        #print(level)
+tree(results)
+def combine(hirarchy):
+    for puzzle1 in hirarchy:
+        for puzzle2 in hirarchy:
+            if(puzzle1!=puzzle2):
+                #conbine
+                for link in range(min(len(puzzle1),len(puzzle2))):
+                    
+        #for piece in puzzle:
+combine(hirarchy)           
