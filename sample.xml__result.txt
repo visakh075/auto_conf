@@ -1,0 +1,66 @@
+Result filterd for feeds -- 1 of 2 -- 
+location : (1318,4)
+id:2112
+title:Video Test
+description:.Net is a programming language developed by Microsoft. It was designed to build applications which could run on the Windows platform. The .Net programming language can be used to develop Forms based applications, Web based applications, and Web services.
+location:CP-8, CP Block Rd, Block CP, Poorvi Pitampura, Pitam Pura, Delhi, 110034, India
+lng:0
+lat:0
+userId:3040
+name:Shweta Singh
+isdeleted:false
+profilePicture:Images/085985b6-0662-4e1d-b5b4-20016d31514f.png
+videoUrl/
+images/
+mediatype:0
+imagePaths/
+feedsComment/
+commentCount:1
+id:3183
+name
+description/
+url:https://www.youtube.com/embed/h7huHkvPoEE
+mediatype:2
+likeCount:0
+place/
+createAt:0001-01-01T00:00:00
+likes:1
+dislikes:0
+userAction:2
+createdAt:2019-12-30T13:31:27.0998859
+code:0
+msg/
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 2 of 2 -- 
+location : (1354,4)
+id:2111
+title:.Net Framework
+description:.Net is a programming language developed by Microsoft. It was designed to build applications which could run on the Windows platform. The .Net programming language can be used to develop Forms based applications, Web based applications, and Web services.
+location:174, Buddh Vihar, Block Z, Sector 12, Noida, Uttar Pradesh 201301, India
+lng:0
+lat:0
+userId:3040
+name:Shweta Singh
+isdeleted:false
+profilePicture:Images/085985b6-0662-4e1d-b5b4-20016d31514f.png
+videoUrl/
+images/
+mediatype:0
+imagePaths/
+feedsComment/
+commentCount:0
+id:3182
+name:Yerevan.jpg
+description/
+url:feedsmedia/3040/8631984a-0efc-439e-bf00-b7730bdd2313.jpg
+mediatype:1
+likeCount:0
+place/
+createAt:0001-01-01T00:00:00
+likes:1
+dislikes:0
+userAction:2
+createdAt:2019-12-30T13:28:58.4896644
+code:0
+msg/
+-- -- -- -- -- -- -- -- -- -- 

@@ -53,7 +53,7 @@ class tag:
         elif(self.t_type==5):
             return ' '.join(self.atrr)
         else:
-            tmp='';
+            tmp=''
             for i in self.children:
                 if(i.name!=self.name):
                    tmp+=i.export()
@@ -68,8 +68,8 @@ class extractor:
         self.root=tag("root",0,0,0)
         self.filename=filename
         self.fp=open(self.filename,"rb")
-        #self.fout=open(self.filename+"out.txt","w")
-
+        self.log=open(self.filename+"__result.txt","w")
+        self.log.close()
         self.extract_tags()
         self.pairing()
         self.search_results=[]
@@ -79,7 +79,6 @@ class extractor:
         s=""
         l=1
         r=0
-
         while(1):
             c=self.fp.read(1)
             loc=self.fp.tell()
@@ -120,9 +119,9 @@ class extractor:
                 self.open_list.append(tag)
             elif(tag.t_type==1):
                 if(len(self.open_list)>0 and self.open_list[-1].name==tag.name):
-                    #print(tag.name,self.open_list[-1].name,tag.l,self.open_list[-1].l)
                     self.open_list.pop()
         print("Pairing Completed")
+        
     def search(self,search_key):
         print("Searching "+search_key+"..")
         #self.search_results=[]
@@ -136,16 +135,19 @@ class extractor:
         print("Added to Search Results")
     
     def filter_search(self,search_key,tag_name,list_value):
+        tmp_result=[]
         for results in self.search_results:
             if(search_key==results[0]):
-                # results[0]==the key to search
-                # results[1]=the tags
+                # results[0] = the key to search
+                # results[1] = the tags
                 for result in results[1]:
-                    for spec_tag in result.children:  
+                    for spec_tag in result.children:
                         if(spec_tag.name==tag_name and len(spec_tag.children)==2):
-                            #simple open clode with oone child
+                            #simple open clode with one child
                             if(spec_tag.children[0].name in list_value):
-                                self.filter_result.append(results)
+                                # result element is filterd tag
+                                tmp_result.append(result)
+            self.filter_result.append([search_key,tmp_result])
                 
     def search_out(self,search_key=""):
         print("Writing Search Resuts of "+search_key)
@@ -157,8 +159,10 @@ class extractor:
                     idx=0
                     for result in results[1]:
                         idx+=1
-                        self.log.write("Result for "+search_key+" --"+str(idx) + " of "+ len_res+" -- \n"+result.export()+" -- -- -- -- -- \n")
-                    self.log.close();
+                        self.log.write("Result for "+search_key+" -- "+str(idx) + " of "+ len_res+" -- \n")
+                        self.log.write(result.export())
+                        self.log.write("-- -- -- -- -- -- -- -- -- -- \n")
+                    self.log.close()
         print("Writing Search Completed")
     def search_out_all(self):
         for results in self.search_results:
@@ -167,18 +171,23 @@ class extractor:
         print("Writing Search Resuts")
         if(len(self.filter_result)>0):
             self.log=open(self.filename+"__result.txt","a")
-#            len_res=str(len(self.filter_result))
-#            idx=0
             for results in self.filter_result:
                 len_res=str(len(results[1]))
                 idx=0
                 for result in results[1]:        
                     idx+=1
-                    self.log.write("Filterd Result of "+results[0]+"--"+str(idx) + " of "+ len_res+" -- \n"+result.export()+" -- -- -- -- -- \n")
-            self.log.close();
+                    self.log.write("Result filterd for "+results[0]+" -- "+str(idx) + " of "+ len_res+" -- \n")
+                    
+                    head=""
+                    head+="location : ("+str(result.l)+","+str(result.c)+")\n"
+                    head+=result.export()
+                    
+                    self.log.write(head)
+                    self.log.write("-- -- -- -- -- -- -- -- -- -- \n")
+            self.log.close()
         print("Writing Search Completed")
         
-data=extractor("gconf_sy_pavast-utf.xml")
+data=extractor("MyECU.ecuc.arxml.txt")
 #
 #open_list_str=[]
 #open_list_x=[]
@@ -191,15 +200,14 @@ data=extractor("gconf_sy_pavast-utf.xml")
 #        log.write(i.name+"("+str(i.l)+","+str(i.c)+")\n")
 #log.close()
 # define a dictonary to return the values that requires
-data.search("SW-SYSTEMCONST")
-data.search("SW-SYSTEMCONST-REF")
-#data.search_out_all()
-short_list=["MOCMM_ABESHTOFFPAHTESTENA_SC","MOCMM_CANSHOFFPAHTESTENA_SC","MOCMM_NRTRCV_SC"]
-data.filter_search("SW-SYSTEMCONST","SHORT-NAME",short_list)
-data.filter_search_out()
+data.search("ECUC-CONTAINER-VALUE")
+
+data.search_out_all()
+#short_list=["2111","2112"]
+#data.filter_search("feeds","id",short_list)
+#data.filter_search_out()
 # value_tags=[]
 # for i in data.tags_list:
 #     if(i.t_type!=0):
 #         value_tags.append(i)
 #<SW-SYSTEMCONST-REF>
-        
