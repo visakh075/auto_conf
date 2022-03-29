@@ -26,6 +26,7 @@ class tag:
                 self.name=str(self.name[1:])
             elif(contents[0][-1]=='/' or contents[0][-1]=='?'):
                 self.t_type=2
+                self.name=str(self.name[:len(self.name)-1])
             elif(contents[0][0]=='?' or contents[0][0]=='!'):
                 self.t_type=2
             else:
@@ -186,28 +187,4 @@ class extractor:
                     self.log.write("-- -- -- -- -- -- -- -- -- -- \n")
             self.log.close()
         print("Writing Search Completed")
-        
-data=extractor("MyECU.ecuc.arxml.txt")
-#
-#open_list_str=[]
-#open_list_x=[]
-#for i in data.open_list:
-#    open_list_x.append([i.name,i.l,i.c])    
-#log=open("log.txt","w")
-#for i in data.tags_list:
-#    if(i.t_type==0):    
-#        open_list_str.append([i.name,i.l,i.c])
-#        log.write(i.name+"("+str(i.l)+","+str(i.c)+")\n")
-#log.close()
-# define a dictonary to return the values that requires
-data.search("ECUC-CONTAINER-VALUE")
 
-data.search_out_all()
-#short_list=["2111","2112"]
-#data.filter_search("feeds","id",short_list)
-#data.filter_search_out()
-# value_tags=[]
-# for i in data.tags_list:
-#     if(i.t_type!=0):
-#         value_tags.append(i)
-#<SW-SYSTEMCONST-REF>

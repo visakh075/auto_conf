@@ -1,0 +1,47 @@
+*
+{
+	box-sizing: border-box;
+}
+html,body
+{
+	size: 7in 9.25in;   
+}
+body
+{
+	max-width: 9.25in;
+	margin: 27mm 16mm 27mm 16mm;
+}
+.results > .tag_obj
+{
+	background-color: none;
+	border: 1px solid black;
+	margin: 10px;
+}
+.results > .tag_obj > .tag_head
+{
+	background-color: beige;
+	padding: 3px;
+}
+.tag_child
+{
+	padding-top:.5px;
+	padding-bottom: .5px;
+	padding-left: 10px;
+}
+.single
+{
+	display: inline-flex;
+}
+.single > *
+{
+	display: block;
+	padding-right: 5px;
+}
+.tag_value
+{
+	color:brown;
+}
+.tag_empty
+{
+	color:rgb(184, 184, 184);
+}

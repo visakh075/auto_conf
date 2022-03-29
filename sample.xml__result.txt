@@ -1,66 +1,387 @@
-Result filterd for feeds -- 1 of 2 -- 
-location : (1318,4)
-id:2112
-title:Video Test
-description:.Net is a programming language developed by Microsoft. It was designed to build applications which could run on the Windows platform. The .Net programming language can be used to develop Forms based applications, Web based applications, and Web services.
-location:CP-8, CP Block Rd, Block CP, Poorvi Pitampura, Pitam Pura, Delhi, 110034, India
+Result filterd for feeds -- 1 of 11 -- 
+location : (1390,4)
+id:2110
+title:Software Testing
+description:Software testing is a process, to evaluate the functionality of a software application with an intent to find whether the developed software met the specified requirements or not and to identify the defects to ensure that the product is defect free in order to produce the quality product. Software testing is a process, to evaluate the functionality of a software application with an intent to find whether the developed software met the specified requirements or not and to identify the defects to ensure that the product is defect free in order to produce the quality product
+location:Saharanpur Rd, Shanti Nagar, Beribagh, Saharanpur, Uttar Pradesh 247122, India
 lng:0
 lat:0
-userId:3040
-name:Shweta Singh
+userId:3046
+name:Aryan Thapliyal
 isdeleted:false
-profilePicture:Images/085985b6-0662-4e1d-b5b4-20016d31514f.png
-videoUrl/
-images/
+profilePicture:Images/8a8a93f3-5696-4387-84e5-ac632cc85ec1.png
+videoUrl
+images
 mediatype:0
-imagePaths/
-feedsComment/
-commentCount:1
-id:3183
-name
-description/
-url:https://www.youtube.com/embed/h7huHkvPoEE
-mediatype:2
-likeCount:0
-place/
-createAt:0001-01-01T00:00:00
-likes:1
-dislikes:0
-userAction:2
-createdAt:2019-12-30T13:31:27.0998859
-code:0
-msg/
--- -- -- -- -- -- -- -- -- -- 
-Result filterd for feeds -- 2 of 2 -- 
-location : (1354,4)
-id:2111
-title:.Net Framework
-description:.Net is a programming language developed by Microsoft. It was designed to build applications which could run on the Windows platform. The .Net programming language can be used to develop Forms based applications, Web based applications, and Web services.
-location:174, Buddh Vihar, Block Z, Sector 12, Noida, Uttar Pradesh 201301, India
-lng:0
-lat:0
-userId:3040
-name:Shweta Singh
-isdeleted:false
-profilePicture:Images/085985b6-0662-4e1d-b5b4-20016d31514f.png
-videoUrl/
-images/
-mediatype:0
-imagePaths/
-feedsComment/
+imagePaths
+feedsComment
 commentCount:0
-id:3182
-name:Yerevan.jpg
-description/
-url:feedsmedia/3040/8631984a-0efc-439e-bf00-b7730bdd2313.jpg
+id:3181
+name:Abovyan.jpg
+description
+url:feedsmedia/3046/ab63f603-c690-4fe0-851c-7a6c0bb16b7a.jpg
 mediatype:1
 likeCount:0
-place/
+place
 createAt:0001-01-01T00:00:00
 likes:1
 dislikes:0
 userAction:2
-createdAt:2019-12-30T13:28:58.4896644
+createdAt:2019-12-30T13:19:54.8840519
 code:0
-msg/
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 2 of 11 -- 
+location : (1426,4)
+id:2109
+title:Test your Text Max Range
+description:A Search Engine Optimization Specialist is responsible for analyzing, reviewing and implementing websites that are optimized to be picked up by search engines. An SEO specialist will develop content to include keywords or phrases in order to increase traffic to website.A Search Engine Optimization Specialist is responsible for analyzing, reviewing and implementing websites that are optimized to be picked up by search engines. An SEO specialist will develop content to include keywords or phrases in order to increase traffic to website.
+location:A-10, Sector 63 Rd, A Block, Sector 65, Noida, Uttar Pradesh 201301, India
+lng:0
+lat:0
+userId:3047
+name:Ankiish Thapliyal
+isdeleted:false
+profilePicture:Images/0da0ca00-cfaf-41e8-ab39-cbff55ec64b3.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:5
+id:3177
+name:BMW.jpg
+description
+url:feedsmedia/3047/4936912c-18b5-4ad7-92db-0966313b96f9.jpg
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+id:3178
+name:Mercedes.jpg
+description
+url:feedsmedia/3047/fb3dee19-3f65-48eb-b6d3-a3ffd780d454.jpg
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+id:3179
+name:Starbucks.png
+description
+url:feedsmedia/3047/205c0e80-f34e-4edd-a41c-425395b28c6f.png
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+id:3180
+name:Volkswagen.png
+description
+url:feedsmedia/3047/49ec99f6-ee4c-467f-8af3-b6fc4f1fa37d.png
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:5
+dislikes:0
+userAction:2
+createdAt:2019-12-30T11:54:41.728924
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 3 of 11 -- 
+location : (1492,4)
+id:2108
+title:hgjgh
+description:ghj
+location:Hermannplatz 5-6, 10967 Berlin, Germany
+lng:0
+lat:0
+userId:3033
+name:sanjay
+isdeleted:false
+profilePicture:/Images/userimageicon.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:0
+id:3176
+name:images 3.jpg
+description
+url:feedsmedia/3033/28cdad70-0407-4f32-88b2-d678f919515e.jpg
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:1
+dislikes:0
+userAction:2
+createdAt:2019-12-30T11:24:52.8786778
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 4 of 11 -- 
+location : (1528,4)
+id:2107
+title:Holiday
+description:A vacation is what you take when you can no longer take what youve been taking
+location:Laxmi Nagar, Ostwal Nagari, Oswal Nagari, Nalasopara East, Nala Sopara, Maharashtra 401209, India
+lng:0
+lat:0
+userId:3031
+name:Ashish Thapliyal
+isdeleted:false
+profilePicture:Images/fc8af47d-ef15-4c25-9d3f-a7a58c7444f9.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:0
+id:3175
+name
+description
+url:https://www.youtube.com/embed/LaFtAcIrGWA
+mediatype:2
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:1
+dislikes:0
+userAction:2
+createdAt:2019-12-30T11:01:10.5935467
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 5 of 11 -- 
+location : (1564,4)
+id:2106
+title:fgh
+description:fgh
+location:66 Tottenham Court Rd, Bloomsbury, London W1T 2EX, UK
+lng:0
+lat:0
+userId:3035
+name:n1
+isdeleted:false
+profilePicture:Images/4e60754a-e8a7-4db7-b266-f28b2bcf00ae.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:2
+id:3174
+name:images.jpg
+description
+url:feedsmedia/3035/05b6683c-b31c-473e-8b8f-c42fc1730bd2.jpg
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:2
+dislikes:0
+userAction:2
+createdAt:2019-12-30T11:00:50.8960955
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 6 of 11 -- 
+location : (1600,4)
+id:2105
+title:fdg
+description:dfg
+location:Tomtom, Odakule, 34433 Beyolu/stanbul, Turkey
+lng:0
+lat:0
+userId:3034
+name:neha
+isdeleted:false
+profilePicture:/Images/userimageicon.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:0
+id:3173
+name:images.png
+description
+url:feedsmedia/3034/2112b430-e4f6-40fc-9b91-412f27de0fef.png
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:0
+dislikes:0
+userAction:2
+createdAt:2019-12-30T10:53:38.112796
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 7 of 11 -- 
+location : (1636,4)
+id:2104
+title:dfg
+description:dfg
+location:DF-250 - Planaltina, Braslia - DF, Brazil
+lng:0
+lat:0
+userId:3035
+name:n1
+isdeleted:false
+profilePicture:Images/4e60754a-e8a7-4db7-b266-f28b2bcf00ae.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:0
+id:3172
+name
+description
+url
+mediatype:2
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:0
+dislikes:0
+userAction:2
+createdAt:2019-12-30T10:50:24.477095
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 8 of 11 -- 
+location : (1672,4)
+id:2103
+title:A hill station
+description:A hill station is a town located at a higher elevation than the nearby plain or valley. The term was used mostly in colonial Asia, but also in Africa, for towns founded by European colonial rulers as refuges from the summer heat, up where temperatures are cooler.
+location:C-38, Shimla Road, Devlok Colony, PNB Vihar, Majra, Dehradun, Uttarakhand 248171, India
+lng:0
+lat:0
+userId:3035
+name:n1
+isdeleted:false
+profilePicture:Images/4e60754a-e8a7-4db7-b266-f28b2bcf00ae.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:0
+id:3171
+name
+description
+url
+mediatype:2
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:0
+dislikes:0
+userAction:2
+createdAt:2019-12-30T10:49:05.4450841
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 9 of 11 -- 
+location : (1708,4)
+id:2102
+title:Remembering School Days
+description:The best moment in class was when I was in 9th grade in sixth period. That was when I got into poetry and spoken word. Having that &quot;character and scene&quot; class made my life even greater. Not knowing anything about poetry, hating on poems about reading and writing it in the past. That class was fun in many ways. For example; there was this one time where we had to write our own plays and poems and perform them in front of the class. I felt alive, and the creative side of me came out. When I wrote my first poem in freshman year. I realized that it was fun and unique. I felt like I wanted to write more and more. When I performed my first poem to that class I found my passion. Since that day and today I have written over 400 poems and made two books. I have performed on many stages in small audience and in school. That was a good day for me because I can write my thoughts down and write the truth about the world. Teachers and students can learn from this experience that, you can find what best fits you.
+location:A-10, Sector 63 Rd, A Block, Sector 65, Noida, Uttar Pradesh 201301, India
+lng:0
+lat:0
+userId:3042
+name:faiz
+isdeleted:false
+profilePicture:Images/80cdd447-4a3a-483f-b222-86989cc3d37e.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:0
+id:3170
+name:Event 34.jpg
+description
+url:feedsmedia/3042/79cc68c2-9f30-4472-9e07-09bf8eced7a0.jpg
+mediatype:1
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:0
+dislikes:0
+userAction:2
+createdAt:2019-12-30T10:09:43.4080168
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 10 of 11 -- 
+location : (1744,4)
+id:2101
+title:sdf
+description:fsdf
+location:2001 NV-582, Las Vegas, NV 89101, USA
+lng:0
+lat:0
+userId:3035
+name:n1
+isdeleted:false
+profilePicture:Images/4e60754a-e8a7-4db7-b266-f28b2bcf00ae.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:0
+id:3169
+name
+description
+url:https://www.youtube.com/embed/3YhQV3aQmb4
+mediatype:2
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:0
+dislikes:0
+userAction:2
+createdAt:2019-12-30T08:51:50.4672004
+code:0
+msg
+-- -- -- -- -- -- -- -- -- -- 
+Result filterd for feeds -- 11 of 11 -- 
+location : (1780,4)
+id:2100
+title:Watching TOM AND JERRY with friends
+description:Watching TOM AND JERRY with friends
+location:A-10, Sector 63 Rd, A Block, Sector 65, Noida, Uttar Pradesh 201301, India
+lng:0
+lat:0
+userId:3042
+name:faiz
+isdeleted:false
+profilePicture:Images/80cdd447-4a3a-483f-b222-86989cc3d37e.png
+videoUrl
+images
+mediatype:0
+imagePaths
+feedsComment
+commentCount:2
+id:3168
+name
+description
+url:&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/AGBjI0x9VbM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+mediatype:2
+likeCount:0
+place
+createAt:0001-01-01T00:00:00
+likes:2
+dislikes:0
+userAction:2
+createdAt:2019-12-30T08:00:24.518761
+code:0
+msg
 -- -- -- -- -- -- -- -- -- -- 
