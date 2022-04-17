@@ -5,6 +5,7 @@ Created on Mon Mar 28 19:04:10 2022
 
 @author: erkattiri
 """
+
 from data_extractor import extractor,tag
 
 class ht:
@@ -52,10 +53,22 @@ class html_report:
     def gen_report(self):
         
         #genrate html from tag_list
+        # addd a coment box below waech tag for the user to give entr
+        #
+        #
+        comment_section=ht("section","","class='comment_box'")
+        comment_section+ht("div","visakh sethumadhavan","class='author_name'")
         body=ht("body","")
         entires=ht("section","","class='results'")
+        
         for tag_i in self.tag_list:
-            entires+self.tag_to_ht(tag_i)
+            box_container=ht("section","","class='box_section'")
+            
+            box_container+self.tag_to_ht(tag_i)
+            box_container+comment_section
+            
+            entires+box_container
+            
         body+entires
         self.data+body
         self.report_file.write(self.data.html())
